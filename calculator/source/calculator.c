@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-#include "/home/student/Desktop/ori_git/.git/calculator/header/calculator.h"
+#include "C:\Users\Ori\Desktop\ori_git\calculator\header\calculator.h"
+// "/home/student/Desktop/ori_git/.git/calculator/header/calculator.h"
 
 
 void run_calculator(void)
@@ -27,4 +28,5 @@ void run_calculator(void)
 void main(void)
 {
 	run_calculator();
+	printf("this is ori branch\n");
 }
