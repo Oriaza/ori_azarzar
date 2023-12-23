@@ -1,7 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h> // atoi
 
-#include "C:\Users\Ori\Desktop\ori_git\calculator\header\calculator.h"
-// "/home/student/Desktop/ori_git/.git/calculator/header/calculator.h"
+#include "/home/student/Desktop/ori_git/calculator/header/calculator.h"
 
 
 void run_calculator(void)
@@ -13,20 +13,18 @@ void run_calculator(void)
 
 
 	fgets(expression, sizeof(expression), stdin);
-	
-	
+	result = atoi(expression);
 
-	printf(" %s\n", result);
+	if (0 == result)
+    {
+        printf("calculaor can only recive numbers.\n");
+    }
+
+	printf(" %d\n", result);
 }
-
-
-
-
-
 
 
 void main(void)
 {
 	run_calculator();
-	printf("this is ori branch\n");
 }
